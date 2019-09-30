@@ -43,18 +43,18 @@
             <div class="col-md-12" style="padding: 4em">
                 <fieldset class="mt-2">
                     <label for="items">Number of items:</label>
-                    <input type="text" id="items" class="form-control">
+                    <input type="text" id="items" class="form-control" required autofocus>
                 </fieldset>
 
                 <fieldset class="mt-2">
                     <label for="sizeEach">Average size per item:</label>
-                    <input type="text" id="sizeEach" class="form-control">
+                    <input type="text" id="sizeEach" class="form-control" required>
                 </fieldset>
 
                 <div class="text-center mt-4">
                     <button type="button" id="calculateBtn" class="btn btn-info light-blue">Calculate Storage</button>
                 </div>
-                <p id="result"></p>
+                <p id="result" class="mt-4"></p>
             </div>
         </div>
     </main>
