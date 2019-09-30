@@ -16,14 +16,14 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="/styles/style.css">
 
-    <title>Document</title>
+    <title>Storage Estimator</title>
 </head>
 
 <body class="grey lighten-1">
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
-            <a class="navbar-brand" href="index.html">Navbar</a>
+            <a class="navbar-brand" href="index.html">Storage Space Estimator</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,24 +36,25 @@
                 </ul>
             </div>
         </nav>
-        <h1 class="text-center mt-4">Title</h1>
+        <h1 class="text-center mt-4">Storage Space Estimator</h1>
     </header>
     <main class="container-fluid d-flex justify-content-center">
         <div class="row">
             <div class="col-md-12" style="padding: 4em">
                 <fieldset class="mt-2">
-                    <label for="exampleForm2">Input:</label>
-                    <input type="text" id="exampleForm2" class="form-control">
+                    <label for="items">Number of items:</label>
+                    <input type="text" id="items" class="form-control">
                 </fieldset>
 
                 <fieldset class="mt-2">
-                    <label for="exampleForm2">Input:</label>
-                    <input type="text" id="exampleForm2" class="form-control">
+                    <label for="sizeEach">Average size per item:</label>
+                    <input type="text" id="sizeEach" class="form-control">
                 </fieldset>
 
                 <div class="text-center mt-4">
-                    <button type="button" class="btn btn-info light-blue">Button</button>
+                    <button type="button" id="calculateBtn" class="btn btn-info light-blue">Calculate Storage</button>
                 </div>
+                <p id="result"></p>
             </div>
         </div>
     </main>
